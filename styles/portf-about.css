@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "Trap";
+  src: url(/fonts/Trap-Regular.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Trap-B";
+  src: url(/fonts/Trap-Bold.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neu";
+  src: url(/fonts/PPNeueMachina-Regular.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0px;
+  font-family: Inter, sans-serif;
+}
+
+::selection {
+  color: rgb(20, 77, 95);
+  background-color: rgb(84, 210, 212);
+}
+
+body {
+  min-height: 100vh;
+
+  background: #020024;
+  background: -webkit-linear-gradient(
+    153deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(99, 99, 150, 1) 59%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    153deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(99, 99, 150, 1) 59%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background: linear-gradient(
+    153deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(99, 99, 150, 1) 59%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024", endColorstr="#00D4FF", GradientType=0);
+}
+
+header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 55px;
+  padding-right: 55px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  font-size: 16px;
+  color: rgb(115, 115, 115);
+  font-family: "Neu", Inter, sans-serif;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-left: 55px;
+    padding-right: 55px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 18px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-weight: 300;
+  font-family: "Neu", Inter, sans-serif;
+}
+
+.middle {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.middle a {
+  transition: color 0.15s;
+}
+.middle a:hover {
+  color: rgb(229, 229, 229);
+}
+
+.right {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.im {
+  height: 28px;
+  width: 28px;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-side,
+.right-side {
+  flex: 1;
+  padding: clamp(50px, 6vw, 70px);
+  padding-top: clamp(100px, 6vw, 125px);
+  box-sizing: border-box;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top {
+  line-height: 35px;
+}
+
+.top h1 {
+  font-size: 48px;
+  font-family: "Trap-B", Inter, sans-serif;
+  white-space: nowrap;
+  color: rgb(196, 209, 236);
+  margin-top: 7px;
+}
+.top h2 {
+  font-size: 20px;
+  margin-top: 15px;
+  font-family: Inter, sans-serif;
+  color: rgb(196, 209, 236);
+}
+.top p {
+  font-size: 17px;
+  font-family: inter, sans-serif;
+  color: rgb(130, 151, 189);
+}
+
+@media (max-width: 768px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    min-height: 50vh;
+    padding: clamp(35px, 6vw, 70px);
+    padding-left: clamp(16px, 6vw, 64px);
+  }
+
+  .left-side {
+    padding-top: clamp(65px, 6vw, 70px);
+    margin-bottom: -5vw;
+  }
+}
+
+.connect {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.link {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 24px;
+  transition: background 0.2s;
+}
+
+.link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.i {
+  height: 30px;
+  width: 30px;
+}
+
+.link:hover {
+  background-color: rgb(51, 65, 85);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(115, 115, 115);
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding-left: clamp(16px, 6vw, 40px);
+
+  color: rgb(188, 204, 233);
+}
+
+.right-side h2 {
+  font-size: 20px;
+}
+
+.right-side p {
+  word-spacing: 5px;
+  font-size: 16.5px;
+  font-family: "Trap", inter, sans-serif;
+}
+
+.dark {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 3px;
+  font-size: 11px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.dark:hover .tooltip {
+  opacity: 1;
+}

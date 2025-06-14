@@ -1,0 +1,270 @@
+@font-face {
+  font-family: "Trap";
+  src: url(/fonts/Trap-Regular.otf) format("opentype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Trap-B";
+  src: url(/fonts/Trap-Bold.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neu";
+  src: url(/fonts/PPNeueMachina-Regular.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0px;
+  font-family: Inter, sans-serif;
+}
+
+::selection {
+  color: rgb(20, 77, 95);
+  background-color: rgb(84, 210, 212);
+}
+
+body {
+  min-height: 100vh;
+
+  background: #020024;
+  background: -webkit-linear-gradient(
+    153deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(99, 99, 150, 1) 59%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    153deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(99, 99, 150, 1) 59%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background: linear-gradient(
+    153deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(99, 99, 150, 1) 59%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024", endColorstr="#00D4FF", GradientType=0);
+}
+
+header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 56px;
+  padding-right: 56px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  font-size: 16px;
+  color: rgb(115, 115, 115);
+  font-family: "Neu", Inter, sans-serif;
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(115, 115, 115);
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-left: 55px;
+    padding-right: 55px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 18px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-weight: 300;
+  font-family: "Neu", Inter, sans-serif;
+}
+
+.middle {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.middle a {
+  transition: color 0.15s;
+}
+.middle a:hover {
+  color: rgb(229, 229, 229);
+}
+
+.right {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.im {
+  height: 24px;
+  width: 24px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.1;
+  font-optical-sizing: auto;
+  font-family: "Trap-B", Inter, sans-serif;
+  word-spacing: 7px;
+
+  background: linear-gradient(
+    153deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 255, 255, 1) 59%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (max-width: 505px) {
+  h1 {
+    max-width: 380px;
+  }
+}
+
+.center p {
+  font-size: 20px;
+  flex: 1;
+  max-width: 600px;
+  color: rgb(212, 212, 212);
+  line-height: 1.4;
+}
+
+.connect {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.link {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 24px;
+  transition: background 0.2s;
+}
+
+.link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.i {
+  height: 30px;
+  width: 30px;
+}
+
+.link:hover {
+  background-color: rgb(51, 65, 85);
+}
+
+footer {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 56px;
+  padding-right: 56px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(182, 182, 182);
+}
+
+@media (max-width: 570px) {
+  .txt {
+    width: 300px;
+  }
+}
+
+.txt a {
+  transition: color 0.15s;
+  text-decoration: none;
+  color: rgb(173, 173, 173);
+}
+.txt a:hover {
+  color: rgb(229, 229, 229);
+}
+
+.dark {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 7px;
+  border-radius: 3px;
+  font-size: 11px;
+  bottom: -70px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  max-width: 180px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.dark:hover .tooltip {
+  opacity: 1;
+}
