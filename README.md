@@ -1,7 +1,6 @@
 #  Personal Portfolio Website
 
-Welcome to my personal portfolio website!  
-A simple, responsive site where I showcase the projects I’ve built and document my journey as I explore web development.
+A personal website is something I really wanted to build—not just to showcase the projects I've worked on, but also as a space that reflects my learning journey and who I am. It's simple, responsive, and sprinkled with a few personal touches, like custom icons and playful tooltips. 
 
 ##  Live Site
 You can check out the deployed website here: [View Portfolio](https://bright-froyo-24bb95.netlify.app/)
