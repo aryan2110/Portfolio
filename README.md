@@ -21,5 +21,5 @@ A personal website is something I really wanted to build—not just to showcase 
 - Clean, minimal design
 - Mobile responsive layout
 - Personal touches like custom SVG icons and hover tooltips
-- A fun, interactive vibe without using JavaScript yet
+
 
