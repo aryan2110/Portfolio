@@ -11,13 +11,11 @@ A personal website is something I really wanted to build—not just to showcase 
 <br/>
 </div>
 
----
 
 ## 🛠️ Tech Stack
 - **HTML5**
 - **CSS3**
 
----
 
 ## Features
 - Clean, minimal design
