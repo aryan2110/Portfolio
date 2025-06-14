@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://your-deployed-site-link.com">
-    <img src="assets/home-desktop.png" alt="Portfolio Home Page"  >
+    <img src="assets/home-desktop.png" alt="Portfolio Home Page" width="85%" >
   </a>
   <br/>
   
