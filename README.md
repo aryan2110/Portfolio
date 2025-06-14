@@ -1,6 +1,7 @@
 <div align="center">
-<!--   <img src="assets/homepage-desktop.png" alt="Portfolio Home Page" width="80%"> -->
-  [![Portfolio Screenshot](assets/homepage-desktop.png)](https://your-deployed-site-link.com)
+  <a href="https://your-deployed-site-link.com">
+    <img src="assets/home-desktop.png" alt="Portfolio Home Page"  >
+  </a>
   <br/>
   
 <h1 align="center"> Personal Portfolio Website</h1>
