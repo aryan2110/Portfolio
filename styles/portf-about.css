@@ -68,17 +68,14 @@ header {
   font-size: 16px;
   color: rgb(115, 115, 115);
   font-family: "Neu", Inter, sans-serif;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* For the ios people */
+  background-color: transparent; /* who doesnt like transparency */
+  z-index: 1000;
 }
 
 @media (min-width: 768px) {
   header {
-    padding-left: 55px;
-    padding-right: 55px;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     font-size: 18px;
     height: 60px;
     display: flex;

@@ -69,6 +69,11 @@ header {
   font-size: 16px;
   color: rgb(115, 115, 115);
   font-family: "Neu", Inter, sans-serif;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* For the ios people */
+  background-color: transparent; /* who doesnt like transparency */
+  z-index: 1000;
 }
 
 header a {
