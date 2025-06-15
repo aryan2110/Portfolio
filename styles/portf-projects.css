@@ -39,6 +39,9 @@
 body {
   min-height: 100vh;
 
+  display: flex;
+  flex-direction: column;
+
   background: #020024;
   background: -webkit-linear-gradient(
     153deg,
@@ -141,7 +144,7 @@ header {
 }
 
 main {
-  height: 100vh;
+  flex: 1 0 auto;
   margin: 0 auto;
   max-width: 900px;
   padding: 0 clamp(16px, 6vw, 100px);
@@ -263,13 +266,10 @@ footer {
   align-items: center;
   padding-left: 56px;
   padding-right: 56px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
   font-size: 12px;
   text-align: center;
   color: rgb(163, 163, 163);
+  flex-shrink: 0;
 }
 
 @media (max-width: 570px) {
