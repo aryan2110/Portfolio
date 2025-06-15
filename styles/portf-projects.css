@@ -210,6 +210,12 @@ main {
   box-shadow: 5px 5px 15px rgba(220, 220, 220, 0.4);
 }
 
+.arrow {
+  width: 20px;
+  vertical-align: middle;
+  margin-left: -2px;
+}
+
 .connect {
   display: flex;
   gap: 10px;
